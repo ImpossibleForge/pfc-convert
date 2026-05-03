@@ -1,0 +1,19 @@
+pfc-convert v0.1.0
+==================
+Status:  RELEASE — 2026-05-04
+Datum:   2026-04-29
+
+Geplanter Inhalt v0.1.0:
+  - Apache CLF / nginx CLF / NASA95 → JSONL → .pfc
+  - CSV/TSV → JSONL → .pfc
+  - NDJSON → .pfc (nur komprimieren)
+  - Magic-Byte-Detection (gzip/zstd/bz2/lz4/xz auto-erkennen)
+  - Timestamp-Field-Mapping (CLF auto-parse, CSV --timestamp-field)
+  - Dirty-Data-Handling (--on-error skip|fail|log)
+  - Encoding-Detection via chardet
+  - Local + S3 Storage
+  - Drei Modi: One-Shot / Schrittweise / Pipe (--stdout/--stdin)
+  - Python-API für pfc-ingest-watchdog Integration
+  - Audit-Log
+
+Datenblatt: E:\Datenbank\Produkte\P035_PFC_Convert.md

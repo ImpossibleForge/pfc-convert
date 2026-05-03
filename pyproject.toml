@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68,<77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "pfc-convert"
+version         = "0.1.0"
+description     = "Convert legacy log/data formats (Apache CLF, CSV, NDJSON) to PFC format"
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.8"
+keywords        = ["pfc", "compression", "logs", "apache", "csv", "jsonl", "migration"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Logging",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "chardet>=5.0",
+]
+
+[project.optional-dependencies]
+s3    = ["boto3>=1.26"]
+azure = ["azure-storage-blob>=12.0"]
+gcs   = ["google-cloud-storage>=2.0"]
+zst   = ["zstandard>=0.21"]
+lz4   = ["lz4>=4.0"]
+all   = [
+    "boto3>=1.26",
+    "azure-storage-blob>=12.0",
+    "google-cloud-storage>=2.0",
+    "zstandard>=0.21",
+    "lz4>=4.0",
+    "chardet>=5.0",
+]
+
+[project.scripts]
+pfc-convert = "pfc_convert:main"
+
+[project.urls]
+Homepage   = "https://github.com/ImpossibleForge/pfc-convert"
+Repository = "https://github.com/ImpossibleForge/pfc-convert"
+
+[tool.setuptools]
+py-modules = ["pfc_convert"]
