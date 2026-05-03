@@ -103,10 +103,6 @@ Example Apache CLF line and its JSONL output:
 
 Magic bytes are checked first — file extension is ignored. A file named `.log` that is actually gzip-compressed will be decompressed correctly.
 
-> **Parquet / Avro / ORC?**  
-> These formats have their own SDK dependencies and are handled by dedicated tools:  
-> [pfc-migrate-parquet](https://github.com/ImpossibleForge/pfc-migrate-parquet) · [pfc-migrate-avro](https://github.com/ImpossibleForge/pfc-migrate-avro)
-
 ---
 
 ## Three Usage Modes
