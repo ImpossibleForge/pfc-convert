@@ -1,5 +1,10 @@
 # pfc-convert
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![PFC-JSONL](https://img.shields.io/badge/PFC--JSONL-v3.4-green.svg)](https://github.com/ImpossibleForge/pfc-jsonl)
+[![Version](https://img.shields.io/badge/pfc--convert-v0.1.0-brightgreen.svg)](https://github.com/ImpossibleForge/pfc-convert/releases)
+
 Convert legacy log and data formats to [PFC](https://github.com/ImpossibleForge/pfc-jsonl) — the high-performance cold storage format for JSONL data.
 
 ```
