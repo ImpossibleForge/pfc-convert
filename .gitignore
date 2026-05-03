@@ -8,3 +8,7 @@ build/
 *.log
 migration_checkpoint.json
 errors.log
+
+# PFC buffer files
+.pfc_buffer.jsonl
+.pfc_buffer.compressing
