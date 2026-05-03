@@ -33,6 +33,20 @@ pip install pfc-convert
 
 Requires the `pfc_jsonl` binary on your system. Set `PFC_JSONL_BINARY=/path/to/pfc_jsonl` if it is not in `$PATH`.
 
+**Install `pfc_jsonl` binary:**
+
+```bash
+# Linux x64:
+curl -L https://github.com/ImpossibleForge/pfc-jsonl/releases/latest/download/pfc_jsonl-linux-x64 \
+     -o /usr/local/bin/pfc_jsonl && chmod +x /usr/local/bin/pfc_jsonl
+
+# macOS (Apple Silicon M1–M4):
+curl -L https://github.com/ImpossibleForge/pfc-jsonl/releases/latest/download/pfc_jsonl-macos-arm64 \
+     -o /usr/local/bin/pfc_jsonl && chmod +x /usr/local/bin/pfc_jsonl
+```
+
+> **License note:** `pfc_jsonl` is free for personal and open-source use. Commercial use requires a written license — see [pfc-jsonl](https://github.com/ImpossibleForge/pfc-jsonl).
+
 Optional extras:
 
 ```bash
